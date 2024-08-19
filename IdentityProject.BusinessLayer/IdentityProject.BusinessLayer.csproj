@@ -19,4 +19,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\IdentityProject.DAL\IdentityProject.DAL.csproj" />
+    <ProjectReference Include="..\IdentityProject.EntityLayer\IdentityProject.EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
