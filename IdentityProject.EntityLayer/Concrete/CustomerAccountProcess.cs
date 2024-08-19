@@ -15,6 +15,8 @@ namespace IdentityProject.EntityLayer.Concrete
 
         public DateTime ProcessDate { get; set; }
 
+        
+
 
     }
 }

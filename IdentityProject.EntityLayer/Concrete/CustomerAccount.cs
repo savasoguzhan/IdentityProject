@@ -19,5 +19,10 @@ namespace IdentityProject.EntityLayer.Concrete
         public string BankBrach { get; set; }
 
 
+        public int AppUserId { get; set; }
+
+        public AppUser AppUser { get; set; }
+
+
     }
 }
