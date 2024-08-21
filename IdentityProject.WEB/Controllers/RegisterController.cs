@@ -24,6 +24,7 @@ namespace IdentityProject.WEB.Controllers
         {
             if(ModelState.IsValid)
             {
+                Random rnd = new Random();
                 AppUser appUser = new AppUser()
                 {
                     UserName = appUserRegisterDto.Username,
@@ -32,7 +33,8 @@ namespace IdentityProject.WEB.Controllers
                     Surname = appUserRegisterDto.Surname,
                     City = "DEneme",
                     District = "deneme",
-                    ImageUrl="/deneme"
+                    ImageUrl="/deneme",
+                    ConfirmCode =rnd.Next(100000, 1000000)
                 };
                 var result =await _userManager.CreateAsync(appUser,appUserRegisterDto.Password);
                 if(result.Succeeded)
